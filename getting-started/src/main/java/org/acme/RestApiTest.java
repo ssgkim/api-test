@@ -15,7 +15,8 @@ public class RestApiTest {
     private static final Logger LOG = Logger.getLogger(RestApiTest.class);
 
     @GET
-    @Produces(MediaType.TEXT_PLAIN)
+    //@Produces(MediaType.TEXT_PLAIN)
+    @Produces(MediaType.APPLICATION_JSON)
     @Path("/test/{customerIndentifier}/update")
     public String test(@PathParam String customerIndentifier) throws IOException {
         CsvResource resource = CsvResource.getInstance();
