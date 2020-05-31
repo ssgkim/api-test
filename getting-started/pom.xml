@@ -86,6 +86,10 @@
     <profiles>
         <profile>
             <id>native</id>
+            <properties>
+                <quarkus.package.type>native</quarkus.package.type>
+                <quarkus.native.additional-build-args>-H:ResourceConfigurationFiles=resources-config.json</quarkus.native.additional-build-args>
+            </properties>
             <activation>
                 <property>
                     <name>native</name>
