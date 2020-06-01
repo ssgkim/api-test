@@ -23,8 +23,9 @@ public class RestApiTest {
         // Map<String, JsonObject> jsonDatas = resource.getJsonDatas();
         // System.out.println(jsonDatas);
         JsonObject jsonData = resource.getJsonData(customerIndentifier);
-        LOG.debug("");
-        LOG.info(jsonData.toString());
+        //LOG.debug("");
+        //LOG.info(jsonData.toString());
+        System.out.println(jsonData.toString());
         return jsonData.toString();
     }
 
