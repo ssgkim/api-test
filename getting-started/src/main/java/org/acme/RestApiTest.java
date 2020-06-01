@@ -24,6 +24,7 @@ public class RestApiTest {
         // System.out.println(jsonDatas);
         JsonObject jsonData = resource.getJsonData(customerIndentifier);
         LOG.debug("");
+        LOG.info(jsonData.toString());
         return jsonData.toString();
     }
 
