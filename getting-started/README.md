@@ -2,6 +2,8 @@
 oc new-app quay.io/quarkus/ubi-quarkus-native-s2i:20.0.0-java11~https://github.com/ssgkim/api-test --context-dir=/getting-started --name=quarkus
 
 
+./mvnw compile quarkus:dev
+
 This is a minimal CRUD service exposing a couple of endpoints over REST.
 
 Under the hood, this demo uses:
